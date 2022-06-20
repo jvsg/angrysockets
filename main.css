@@ -8,22 +8,43 @@ body{background-color: grey; color: black; font-family: sans-serif; }
 .maincontainer{
     margin-left: 30%;
     margin-right: 30%;
+    margin-top:2%;
     border: 5px solid white;
     border-width: medium;
+    background:darkgrey;
+    border-radius: 25px;
 }
 
-.maintext{
-}
+.maintext{}
 
 .maintext p{
     text-align:justify;
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-right:10%;
     display:flex;
  }
 
-.maintext img{
-    width:15%; float:right; margin:20px;}
+.maintext img{ width:25%; float:right; margin:10px;}
+
+.greentext {background:darkgrey; color:green; padding-left:10%;
+    padding-bottom:2%;
+    font-size: 14px;
+}
+
+.articlepreview {
+    background:darkgrey;
+    border: 5px dotted white;
+    border-width: thin;
+    background:darkgrey;
+    border-radius: 10px;
+}
+
+.tags {
+    display:inline;
+    background:indianred;
+    font-size:small;
+}
 
 .sidenav{
     height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -40,7 +61,7 @@ body{background-color: grey; color: black; font-family: sans-serif; }
 .sidenav a{
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     display: block;
     color: black;
 }
