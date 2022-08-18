@@ -111,10 +111,9 @@ body {
     padding-left: 1%;
     padding-top: 1%;
     padding-bottom:1%;
-    background:darkgrey;
+    background:#e5e4e2;
     border: 5px dotted white;
     border-width: thin;
-    background:darkgrey;
     border-radius: 10px;
 }
 
@@ -126,7 +125,7 @@ body {
 
 .tags {
     display:inline;
-    background:indianred;
+    background:#e5ccc9;
     font-size:small;
 }
 
