@@ -1,7 +1,8 @@
 title: panyri();
 description: A blog about software development, technology, and other random stuff.
-baseurl: ""
-url: ""
+domain: "jvsg.github.io"
+baseurl: "_site"
+url: "https://jvsg.github.io"
 
 # Build settings
 markdown: kramdown
