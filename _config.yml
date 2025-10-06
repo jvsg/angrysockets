@@ -1,0 +1,47 @@
+title: panyri();
+description: A blog about software development, technology, and other random stuff.
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Collections
+collections:
+  articles:
+    output: true
+    permalink: /articles/:title/
+  notes:
+    output: true
+    permalink: /notes/:title/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: "article"
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: "note"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .gitignore
+  - Makefile
+  - build.php
+  - templates
+  - README.md 

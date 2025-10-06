@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght,ROND@737,22&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% endif %}
+</head>
+<body>
+    <header>
+        <h1 class="main-title">while(true)</h1>
+        <nav class="horizontal-nav">
+            <a href="{{ '/' | relative_url }}">HOME</a>
+            <a href="{{ '/notes' | relative_url }}">NOTES</a>
+            <a href="{{ '/articles' | relative_url }}">ARTICLES</a>
+            <a href="{{ '/favblogs' | relative_url }}">FAV BLOGS</a>
+        </nav>
+    </header>
+
+    {{ content }}
+
+    <div class="button-collection">
+        <img src="{{ '/assets/images/phonechump.gif' | relative_url }}" alt="Phone Chump">
+        <img src="{{ '/assets/images/vcss.gif' | relative_url }}" alt="Valid CSS">
+        <img src="{{ '/assets/images/power-button.gif' | relative_url }}" alt="Power Button">
+        <img src="{{ '/assets/images/pgp-now.gif' | relative_url }}" alt="PGP Now">
+        <img src="{{ '/assets/images/mastodon_button_3.gif' | relative_url }}" alt="Mastodon">
+        <img src="{{ '/assets/images/javascriptfree.gif' | relative_url }}" alt="JavaScript Free">
+    </div>
+
+    <footer>
+        <p>&copy; {{ site.time | date: '%Y' }} Jaskaran Veer Singh. All rights reserved.</p>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="page-container">
+    <main class="maincontainer">
+        <section class="maintext">
+            <h2>{{ page.title }}</h2>
+            {% if page.date %}
+            <div class="article-meta">
+                <span class="timestamp">{{ page.date | date: "%b %d, %Y" }}</span>
+                {% if page.tags %}
+                <span class="tags">
+                    {% for tag in page.tags %}
+                    #{{ tag }}
+                    {% endfor %}
+                </span>
+                {% endif %}
+            </div>
+            {% endif %}
+            
+            {{ content }}
+        </section>
+    </main>
+</div> 
